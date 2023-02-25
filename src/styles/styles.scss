@@ -1,0 +1,21 @@
+
+/*Format*/
+
+@import './base/reset';
+@import './base/settings';
+@import './base/mixins';
+
+/*Components*/
+
+@import './components/buttonsocials.scss';
+@import './components/marquee';
+@import './components/navbar';
+@import './components/project';
+@import './components/footer';
+
+/*Pages*/
+
+@import './views/home';
+@import './views/skills';
+@import './views/projects';
+@import './views/notfound';
