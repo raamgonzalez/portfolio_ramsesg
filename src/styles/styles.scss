@@ -7,11 +7,13 @@
 
 /*Components*/
 
-@import './components/buttonsocials.scss';
+@import './components/socials.scss';
 @import './components/marquee';
 @import './components/navbar';
 @import './components/project';
 @import './components/footer';
+@import './components/about';
+
 
 /*Pages*/
 
@@ -19,3 +21,7 @@
 @import './views/skills';
 @import './views/projects';
 @import './views/notfound';
+
+/*Layout*/
+
+@import './layout/layout';

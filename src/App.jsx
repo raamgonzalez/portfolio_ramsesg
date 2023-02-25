@@ -1,5 +1,5 @@
 import { BrowserRouter as Router} from 'react-router-dom'
-import './App.css'
+import Layout from './layout/Layout'
 import Rutas from './routes/Rutas'
 
 function App() {
@@ -8,7 +8,9 @@ function App() {
   return (
     <>
       <Router>
-        <Rutas/>
+        <Layout>
+          <Rutas/>
+        </Layout>
       </Router>
     </>
   )

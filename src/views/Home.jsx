@@ -1,8 +1,14 @@
 import React from 'react'
+import About from '../components/About'
+import Socials from '../components/Socials'
+
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <About/>
+      <Socials/>
+    </>
   )
 }
 
