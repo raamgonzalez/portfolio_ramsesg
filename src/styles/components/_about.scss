@@ -1,0 +1,53 @@
+.about{
+    margin: 4em 0 0 0;
+
+    display: flex;
+    flex-direction: row;
+
+    .title{
+        background-color: tomato;
+
+        &__h2{
+            margin: 2rem 0 0 13rem;
+
+            color: $title;
+            font-family: $font-title;
+            font-size: $font-size-2;
+            
+            position: absolute;
+        }
+
+        &__img{
+        // background-color: aqua;
+        //Modificar estas medidas
+        // width: 392px;
+        // height: 500px;
+        width: 190rem;
+        height: 100%;
+        image-orientation: center center;
+        object-fit: cover;
+        }
+
+    }
+
+    .description{
+        margin: 8em 0 0 9.5em;
+
+        display: flex;
+        flex-direction: row;
+
+        &__p{
+            text-align: left;
+            font-size: $font-size-4;
+            font-weight: 300;
+            line-height: 1.6rem;
+
+        }
+
+        &__p--margin{
+            margin: 0 0 0 7.7em;
+        }
+    }
+
+}
+
