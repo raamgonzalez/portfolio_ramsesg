@@ -3,7 +3,7 @@ import { Route, Routes} from 'react-router-dom'
 import Home from '../views/Home'
 import NotFound from '../views/NotFound'
 import Projects from '../views/Projects'
-import Skills from '../views/Skills'
+import Softs from '../views/Softs'
 
 
 const Rutas = () => {
@@ -12,7 +12,7 @@ const Rutas = () => {
     <Route path = "/" element = { <Home/> } />
     <Route path = "*" element = { <NotFound/> } />
     <Route path = '/projects' element = { <Projects/> } />
-    <Route path = '/skills' element = { <Skills/> } />
+    <Route path = '/skills' element = { <Softs/> } />
   </Routes>
   )
 }

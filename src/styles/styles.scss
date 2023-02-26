@@ -7,9 +7,10 @@
 
 /*Components*/
 
-@import './components/socials.scss';
+@import './components/skills';
+@import './components/socials';
 @import './components/marquee';
-@import './components/navbar';
+@import './components/header';
 @import './components/project';
 @import './components/footer';
 @import './components/about';
@@ -18,7 +19,7 @@
 /*Pages*/
 
 @import './views/home';
-@import './views/skills';
+@import './views/softs';
 @import './views/projects';
 @import './views/notfound';
 
