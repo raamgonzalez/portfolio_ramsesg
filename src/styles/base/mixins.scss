@@ -16,7 +16,7 @@
     }
 }
 
-@mixin mb( $min : 480px, $max : 768px ){
+@mixin mb( $min : 460px, $max : 768px ){
     @media (min-width: $min) and (max-width: $max) {
         @content; 
     }
