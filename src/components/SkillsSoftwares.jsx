@@ -4,7 +4,7 @@ const SkillsSoftwares = () => {
   return (
     <section className="skills__section softwares">
       <h5 className="skills__h5">SOFTWARES</h5>
-      <section className="skills__description">
+      <section className="skills__description skills__description--gap">
         <section className="skills__text">
           <span className="skills__span"> <span className='skills__span--bold'>⤑</span> HTML</span>
           <span className="skills__span"> <span className='skills__span--bold'>⤑</span> CSS</span>

@@ -5,6 +5,10 @@
 
     @include flex(column, nowrap, none, none, 0);
 
+    @include mb(){
+        margin: 4em 0 0 0;
+    }
+
 
     &__title{
         font-size: $font-size-2;
@@ -16,11 +20,17 @@
 
     &__container{
         margin: 4.875rem 0 0 0;
+        width: 100%;
 
-        @include flex(row, nowrap, center, flex-start, 9rem);
+        @include flex(row, nowrap, flex-start, flex-start, 9rem);
+        // display: grid;
+        // grid-template-columns: repeat(6, 1fr);
+        // grid-template-rows: repeat(3,1fr);
+        // gap:em;
 
-        @include dp(){
-            @include flex(column, nowrap, center, flex-start, 0);
+        @include mb(){
+            margin: 3em 0 0 0;
+            @include flex(column, wrap, flex-start, center, 0);
         }
 
     }
@@ -32,32 +42,52 @@
         font-size: $font-size-4;
 
         @include flex(column, nowrap, none, none, 0.3em);
+
+        @include mb(){
+            @include flex(column, nowrap, none, none, 0.5rem);
+        }
     }   
 
     .softwares{
-        min-width: 33rem;
+        
+        @include mb(){
+            align-self: flex-start;
+        }
 
         .skills__description{
 
             @include flex(row, nowrap, flex-start, none, 8em);
-  
+        }
+
+        .skills__description--gap{
+
+            @include mb(){
+                @include flex(row, nowrap, flex-start, none, 6em);
+            }
         }
     }
 
     .softskills{
-        min-width: 33rem;
 
-        .softskills__text{
-
-            @include flex(column, nowrap, none, none, 0);
-            
+        width: 33rem;
+        
+        @include mb(){
+            width: 100%;
+            margin: 2em 0 0 0;
         }
+
     }
 
     .study{
-        width: 100%;
         text-align: left;
+
+        @include mb(){
+            margin: 2em 0 4em 0;
+            align-self: flex-start;
+            // @include flex(column, wrap, flex-start, center, 0);
+        }
     }
+
 
     &__section{
 
@@ -68,6 +98,10 @@
             color: $title;
             font-size: $font-size-3;
             font-family: $title;
+
+            @include mb(){
+                margin: 0 0 1em 0;
+            }
         }
 
 
@@ -85,6 +119,10 @@
         padding: 0;
         margin: 6em 0 5em 0;
         width: 7.5rem;
+
+        @include mb(){
+            display: none;
+        }
     }
     
 }
