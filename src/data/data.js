@@ -6,28 +6,34 @@ export const data = {
   rrss: [
 		{
 			id: uuidv4(),
-			title: "instagram",
+			name: "instagram",
 			href: "https://www.instagram.com/raam.gonzalez/",
+      state: true
 		},
 		{
 			id: uuidv4(),
-			title: "facebook",
+			name: "facebook",
 			href: "https://www.facebook.com/raam.gonzalez/",
+      state: false
+
 		},
 		{
 			id: uuidv4(),
-			title: "github",
+			name: "github",
 			href: "https://github.com/raamgonzalez",
+      state: true
 		},
 		{
 			id: uuidv4(),
-			title: "behance",
+			name: "behance",
 			href: "https://www.behance.net/ramsesgonzale",
+      state: true
 		},
 		{
 			id: uuidv4(),
-			title: "linkedin",
+			name: "linkedin",
 			href: "https://www.linkedin.com/in/ramsesoctaviogonzalez/",
+      state: true
 		},
   ],
 

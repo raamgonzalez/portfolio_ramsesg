@@ -1,15 +1,22 @@
-import React from 'react'
+import { useContext } from 'react'
+import { GlobalContext } from '../context/GlobalContext'
 
 const Socials = () => {
-  
+
+  const { rrss } = useContext(GlobalContext)
+
   return (
 
     <section className='social'>
       <ul className="social__ul">
-        <li className="social__li"><a className='social__a' href='#' target="_blank" rel='noreferrer'>LINKEDIN ?</a></li>
-        <li className="social__li"><a className='social__a' href='#' target="_blank" rel='noreferrer'>GITHUB ?</a></li>
-        <li className="social__li"><a className='social__a' href='#' target="_blank" rel='noreferrer'>INSTAGRAM ?</a></li>
-        <li className="social__li"><a className='social__a' href='#' target="_blank" rel='noreferrer'>BEHANCE ?</a></li>
+        {
+          rrss.map(({id, name, href, state}) => (
+            state ? 
+            <li className="social__li" key={id}><a className='social__a' href={href} target="_blank" rel='noreferrer'>{name.toUpperCase()} ?</a></li>
+            : null
+            
+          ))
+        }
       </ul>
     </section>
   
