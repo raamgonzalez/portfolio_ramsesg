@@ -1,15 +1,59 @@
 .social{
-    margin: 3EM 0 0 0;
+    margin: 2em 0 0 0;
 
     height: 100%;
     display: grid;
     place-items: flex-end;
 
+    @include dp(){
+        margin: 0;
+        place-items: center;
+    }
+
+    @include mb(){
+        margin: 0;
+        place-items: center;
+    }
+    
+
     &__ul{
         height: 100%;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        @include flex(column, wrap, flex-start, none, 0);
+
+        @include dp(){
+            margin: 0 0 2em 0;
+            @include flex(row, wrap, center , center, 1em);
+        }
+
+        @include mb(){
+            width: 100%;
+            margin: 0 0 2em 0;
+            @include flex(row, wrap, space-between , center, 1em);
+        }
+
+        
+
+    }
+
+    &__li{
+
+        @include dp(){
+            padding: 0.2em 0.4em;
+            font-size: $font-size-5;
+            border: 1px solid $text;
+        }
+
+        @include mb(){
+            padding: 0.6em 0.8em;
+            font-size: $font-size-5;
+            border: 1px solid $text;
+        }
+
+        &:hover{
+            content: '';
+            display: block;
+            color: #87A440;
+        }
     }
 }

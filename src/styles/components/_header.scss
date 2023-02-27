@@ -4,14 +4,12 @@
 
     height: 9.5rem;
 
-    display: flex;
-    justify-content: space-between;
+    @include flex(row, none, space-between, none, 0);
+    @include mb(){margin: 2em 0 0 0;}
 
     .navbar{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1.25em;
+
+        @include flex(column, nowrap, center, center, 1.25em);
 
         &__li{
             font-size: $font-size-5;
@@ -19,16 +17,24 @@
     }
 
     .brand{
+        display: flex;
+        align-items: center;
 
         &__logo{
-            width: 277px;
-            height: 154px;
+            width: 100%;
+
+
+            @include mb(){
+                width: 12rem;
+
+            }
         }
     }
 
     .active{
+        text-align: left;
         padding: 0.5em 0.7em;
         border: 1px solid $text;
-        border-radius: 10rem;
+        border-radius: 50%;
     }
 }

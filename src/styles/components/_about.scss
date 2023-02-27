@@ -1,11 +1,18 @@
 .about{
     margin: 4em 0 0 0;
 
-    display: flex;
-    flex-direction: row;
+    @include flex(row, nowrap, none, none, 0);
+
+    @include dp(){
+        @include flex(column, nowrap, none, none, 0);
+    }
+
+    @include mb(){
+        margin: 2em 0 0 0;
+        @include flex(column, nowrap, none, none, 0);
+    }
 
     .title{
-        background-color: tomato;
 
         &__h2{
             margin: 2rem 0 0 13rem;
@@ -15,26 +22,41 @@
             font-size: $font-size-2;
             
             position: absolute;
+
+            @include dp(){
+                // font-size: $font-size-3;
+                margin: 2rem 0 0 0;
+            };
+
+            @include mb(){
+                margin: 1em 0 0 0.5em;
+            }
         }
 
         &__img{
-        // background-color: aqua;
-        //Modificar estas medidas
-        // width: 392px;
-        // height: 500px;
-        width: 190rem;
-        height: 100%;
-        image-orientation: center center;
-        object-fit: cover;
+            width: 190rem;
+            height: 100%;
+            image-orientation: center center;
+            object-fit: cover;
         }
 
     }
 
     .description{
-        margin: 8em 0 0 9.5em;
+        margin: 8em 0 0 5em;
 
-        display: flex;
-        flex-direction: row;
+        @include flex(row, nowrap, none, none, 0);
+
+        @include dp(){
+            @include flex(column, nowrap, none, none, 0);
+            margin: 1em 0;
+            padding: 1em;
+        }
+
+        @include mb(){
+            @include flex(column, nowrap, none, none, 0);
+            margin: 2em 0;
+        }
 
         &__p{
             text-align: left;
@@ -45,7 +67,15 @@
         }
 
         &__p--margin{
-            margin: 0 0 0 7.7em;
+            margin: 0 0 0 5em;
+
+            @include dp(){
+                margin: 1em 0 0 0;
+            }
+
+            @include mb(){
+                margin: 1em 0 0 0;
+            }
         }
     }
 

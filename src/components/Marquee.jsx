@@ -2,9 +2,12 @@ import React from 'react'
 
 const Marquee = () => {
   return (
-    <section className='marquee'>
-      <h3 className='marquee__h3'>#OPENTOWORK</h3>
-    </section>
+    <div className='marquee'>
+        <div>
+            <span className='marquee__span'>#OPENTOWORK  <span className='marquee__span'> #OPENTOWORK</span></span>
+            <span className='marquee__span'>#OPENTOWORK  <span className='marquee__span'> #OPENTOWORK</span></span>
+        </div>
+    </div>
   )
 }
 

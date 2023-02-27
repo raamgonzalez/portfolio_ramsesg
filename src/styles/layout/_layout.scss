@@ -1,4 +1,12 @@
 .wrapper{
     height: 100%;
-    margin: 0em 9.5rem 0em 9.5rem ;
+    margin: 0 9.5rem 0 9.5rem ;
+
+    @include dp(){
+        margin: 0 5rem 0 5rem;
+    }
+
+    @include mb(){
+        margin: 0 2rem 0 2rem;
+    }
 }

@@ -1,10 +1,10 @@
 .skills{
     margin: 5.75rem 0 0 0;
-    
-
-    display: flex;
-    flex-direction: column;
+    width: 100%;
     text-align: center;
+
+    @include flex(column, nowrap, none, none, 0);
+
 
     &__title{
         font-size: $font-size-2;
@@ -17,11 +17,11 @@
     &__container{
         margin: 4.875rem 0 0 0;
 
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 7rem;
+        @include flex(row, nowrap, center, flex-start, 9rem);
+
+        @include dp(){
+            @include flex(column, nowrap, center, flex-start, 0);
+        }
 
     }
 
@@ -31,19 +31,15 @@
         font-weight: 300;
         font-size: $font-size-4;
 
-        display: flex;
-        flex-direction: column;
-        gap: 0.3em;
+        @include flex(column, nowrap, none, none, 0.3em);
     }   
 
     .softwares{
         min-width: 33rem;
 
         .skills__description{
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            gap: 8em;
+
+            @include flex(row, nowrap, flex-start, none, 8em);
   
         }
     }
@@ -52,8 +48,9 @@
         min-width: 33rem;
 
         .softskills__text{
-            display: flex;
-            flex-direction: column;
+
+            @include flex(column, nowrap, none, none, 0);
+            
         }
     }
 
@@ -77,6 +74,10 @@
         .skills__span{
             display: inline-block;
             text-align: left;
+        }
+
+        .skills__span--bold{
+            font-weight: 700;
         }
     }
 
