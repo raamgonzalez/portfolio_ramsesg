@@ -9,11 +9,11 @@ import Softs from '../views/Softs'
 const Rutas = () => {
   return (
     <Routes>
-    <Route path = "/" element = { <Home/> } />
-    <Route path = "*" element = { <NotFound/> } />
-    <Route path = '/projects' element = { <Projects/> } />
-    <Route path = '/skills' element = { <Softs/> } />
-  </Routes>
+      <Route path = "/" element = { <Home/> } />
+      <Route path = "*" element = { <NotFound/> } />
+      <Route path = '/projects' element = { <Projects/> } />
+      <Route path = '/skills' element = { <Softs/> } />
+    </Routes>
   )
 }
 
