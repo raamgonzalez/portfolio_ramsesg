@@ -14,7 +14,7 @@ const Skills = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.3 }}
       className="skills">
       <h4 className="skills__title">HABILIDADES</h4>
       <motion.section 

@@ -12,8 +12,9 @@ const Socials = () => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
-    transition={{ duration: 1 }}
+    transition={{ duration: 0.3 }}
     className='social'>
+      <li className='social__li'><button className='social__contact'>CONTACT ME!</button></li>
       <ul className="social__ul">
         {
           rrss.map(({id, name, href, state}) => (

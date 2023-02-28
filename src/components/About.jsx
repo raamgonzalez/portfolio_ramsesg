@@ -1,13 +1,21 @@
-import React from "react";
+import { useContext } from "react";
 import { motion } from "framer-motion";
+import { GlobalContext } from "../context/GlobalContext";
 
 const About = () => {
+
+  const { scrollingSkills } = useContext(GlobalContext)
+
   return (
+
     <motion.section 
-    initial={{ opacity: 0 }}
+    // initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
-    transition={{ duration: 1 }}
+    transition={{ duration: 0.3 }}
+    variants={scrollingSkills}
+    initial="hidden"
+    whileInView={"visible"}
     className="about">
       <section className="about__title title">
         <h2 className="title__h2">A FRONT END ARCHITECT</h2>
@@ -34,6 +42,7 @@ const About = () => {
         </p>
       </section>
     </motion.section>
+
   );
 };
 

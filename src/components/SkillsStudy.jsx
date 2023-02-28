@@ -7,7 +7,7 @@ const SkillsStudy = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.3 }}
       className="skills__section study">
       <h5 className="skills__h5">STUDY</h5>
       <section className="skills__text skills__text--row">

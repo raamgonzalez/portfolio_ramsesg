@@ -54,7 +54,7 @@ export const data = {
       description:
         "Web realizada con el fin de mostrar mis trabajos y desarrollo como programador",
       soft: ["html", "css", "javascript", "reactjs", "sass"],
-      media: "./media/projects/test.jpg",
+      media: "./media/projects/project_portfolio.jpg",
       urlgit: "https://github.com/raamgonzalez/portfolio.basicweb",
       urldeploy: "https://portfolio-basicweb.vercel.app/",
     },
@@ -92,14 +92,25 @@ export const data = {
     },
     {
       id: uuidv4(),
-      name: "tienda de camiseta",
+      name: "todolist",
       description:
-        "Web para tienda de camisetas de futbol realizada en javascript vanilla",
-      soft: ["html", "css", "javascript"],
-      media: "./media/projects/test.jpg",
-      urlgit: "https://github.com/raamgonzalez/Ecommerce-Tecnophil_Gonzalez",
+        "Todolist realizado en Vue con Vite. Trabaja como una app para seguir tareas",
+      soft: ["html", "css", "javascript", "vue", "vite"],
+      media: "./media/projects/project_todolist.jpg",
+      urlgit: "https://github.com/raamgonzalez/Todolist_vue",
       urldeploy:
-        "https://ecommerce-react-34850-5g6qf957z-raamgonzalez.vercel.app/",
+        "https://raamgonzalez.github.io/Todolist_vue/",
+    },
+    {
+      id: uuidv4(),
+      name: "appclima",
+      description:
+        "Aplicacion del clima realizado en Vue con Vite. Tiene sincronización con API de clima y te dice de acuerdo a la ubicacion que le pongas",
+      soft: ["html", "css", "javascript", "vue", "vite"],
+      media: "./media/projects/project_appclima.jpg",
+      urlgit: "https://github.com/raamgonzalez/weather__app-vue",
+      urldeploy:
+        "https://raamgonzalez.github.io/weather__app-vue/",
     },
   ],
 

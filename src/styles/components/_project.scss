@@ -1,17 +1,9 @@
-    // .project__title{
-    //         text-align: center;
-    //         font-size: $font-size-2;
-    //         font-family: $title;
-    //         color: $title;
-    //         text-decoration: line-through;
-    //         text-decoration-color: #EBBB0D;
-    // }
 
     .project__container{
         margin: 4.875rem 0 0 0;
 
         @include mb(){
-            margin: 2rem 0 0 0;
+            margin: 2em 0 0 0;
         }
 
         
@@ -93,6 +85,10 @@
                     position: absolute;
                     width: 21rem;
                     font-size: $font-size-4;
+                    font-family: $font-base;
+                    font-weight: 300;
+                    color: $text;
+                    background-color: $primary;
 
                     @include mb(){
                         width: 9rem;

@@ -2,8 +2,9 @@
     margin: 2em 0 0 0;
 
     height: 100%;
-    display: grid;
-    place-items: flex-end;
+    // display: grid;
+    // place-items: flex-end;.
+    @include flex(row, wrap, space-between, flex-end, 0);
 
     @include dp(){
         margin: 0;
@@ -15,6 +16,11 @@
         place-items: center;
     }
     
+    .social__contact{
+        padding: 0.5em 0.7em;
+        font-size: $font-size-5;
+        border: 1px solid $text;
+    }
 
     &__ul{
         height: 100%;
