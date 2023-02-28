@@ -21,3 +21,9 @@
         @content; 
     }
 }
+
+@mixin gl( $min : 240px, $max : 1260px ){
+    @media (min-width: $min) and (max-width: $max) {
+        @content; 
+    }
+}

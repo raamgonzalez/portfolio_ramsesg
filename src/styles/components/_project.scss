@@ -1,14 +1,18 @@
-    .project__title{
-            text-align: center;
-            font-size: $font-size-2;
-            font-family: $title;
-            color: $title;
-            text-decoration: line-through;
-            text-decoration-color: #EBBB0D;
-    }
+    // .project__title{
+    //         text-align: center;
+    //         font-size: $font-size-2;
+    //         font-family: $title;
+    //         color: $title;
+    //         text-decoration: line-through;
+    //         text-decoration-color: #EBBB0D;
+    // }
 
     .project__container{
         margin: 4.875rem 0 0 0;
+
+        @include mb(){
+            margin: 2rem 0 0 0;
+        }
 
         .card{
             padding: 1.31rem 0 1.31rem 0.8rem;
@@ -21,27 +25,60 @@
             border-left: 0.5rem solid #B51414;
             border-style: inset;
 
+            @include mb(){
+                margin: 1em 0 0 0;
+                width: 18rem;
+                height: 22rem;
+                @include flex(column, nowrap, space-between, 0, 0);
+            }
+
             &__header{
                 margin: 0;
                 height: 19.375rem;
-                min-width: 26.5rem;
+                min-width: 24rem;
                 position: relative;
                 z-index: 1;
+
+
+                @include mb(){
+                    height: 15rem;
+                    min-width: 20rem;
+                }
 
 
                 .header__img{
                     filter: invert(0.1);
                     filter: brightness(0.5);
                     filter: grayscale(1);
+
+                    @include mb(){
+                        width: 15rem;
+                        image-orientation: center center;
+                        background-size: contain;
+                    }
                 }
 
                 .header__p{
+                    margin: 1rem 0 0 7rem;
+
+                    text-align: left;
                     position: absolute;
                     z-index: 2;
-                    margin: 1rem 0 0 8.25rem;
                     position: absolute;
                     width: 21rem;
                     font-size: $font-size-4;
+
+                    @include mb(){
+                        width: 9rem;
+                        margin: 0;
+                        font-size: $font-size-4;
+                    }
+
+                    @include dp(){
+                        margin: 0;
+                        width: 9rem;
+                        font-size: $font-size-3;
+                    }
                 }
             }
 

@@ -9,6 +9,10 @@
         margin: 4em 0 0 0;
     }
 
+    @include dp(){
+        margin: 4em 0 0 0;
+    }
+
 
     &__title{
         font-size: $font-size-2;
@@ -23,12 +27,13 @@
         width: 100%;
 
         @include flex(row, nowrap, flex-start, flex-start, 9rem);
-        // display: grid;
-        // grid-template-columns: repeat(6, 1fr);
-        // grid-template-rows: repeat(3,1fr);
-        // gap:em;
 
         @include mb(){
+            margin: 3em 0 0 0;
+            @include flex(column, wrap, flex-start, center, 0);
+        }
+
+        @include dp(){
             margin: 3em 0 0 0;
             @include flex(column, wrap, flex-start, center, 0);
         }
@@ -46,11 +51,23 @@
         @include mb(){
             @include flex(column, nowrap, none, none, 0.5rem);
         }
+
+        @include dp(){
+            @include flex(column, nowrap, none, none, 0.5rem);
+        }
     }   
+
+    .skills__text--row{
+        @include flex(row, nowrap, flex-start, none, 2em);
+    }
 
     .softwares{
         
         @include mb(){
+            align-self: flex-start;
+        }
+
+        @include dp(){
             align-self: flex-start;
         }
 
@@ -64,6 +81,7 @@
             @include mb(){
                 @include flex(row, nowrap, flex-start, none, 6em);
             }
+
         }
     }
 
@@ -76,6 +94,11 @@
             margin: 2em 0 0 0;
         }
 
+        @include dp(){
+            width: 100%;
+            margin: 2em 0 0 0;
+        }
+
     }
 
     .study{
@@ -84,7 +107,11 @@
         @include mb(){
             margin: 2em 0 4em 0;
             align-self: flex-start;
-            // @include flex(column, wrap, flex-start, center, 0);
+        }
+
+        @include dp(){
+            margin: 2em 0 4em 0;
+            align-self: flex-start;
         }
     }
 
@@ -121,6 +148,10 @@
         width: 7.5rem;
 
         @include mb(){
+            display: none;
+        }
+
+        @include dp(){
             display: none;
         }
     }

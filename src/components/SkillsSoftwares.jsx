@@ -14,12 +14,12 @@ const SkillsSoftwares = () => {
           <span className="skills__span"> <span className='skills__span--bold'>⤑</span> DJANGO</span>
         </section>
         <section className="skills__text">
-          <span className="skills__span"> <span className='skills__span--bold'>⤑</span> HTML</span>
-          <span className="skills__span"> <span className='skills__span--bold'>⤑</span> CSS</span>
-          <span className="skills__span"> <span className='skills__span--bold'>⤑</span> JAVASCRIPT</span>
-          <span className="skills__span"> <span className='skills__span--bold'>⤑</span> REACT</span>
-          <span className="skills__span"> <span className='skills__span--bold'>⤑</span> PYTHON</span>
-          <span className="skills__span"> <span className='skills__span--bold'>⤑</span> DJANGO</span>
+          <span className="skills__span"> <span className='skills__span--bold'>⤑</span> SASS</span>
+          <span className="skills__span"> <span className='skills__span--bold'>⤑</span> CLI</span>
+          <span className="skills__span"> <span className='skills__span--bold'>⤑</span> FIGMA</span>
+          <span className="skills__span"> <span className='skills__span--bold'>⤑</span> PHOTOSHOP</span>
+          <span className="skills__span"> <span className='skills__span--bold'>⤑</span> ASTRO</span>
+          <span className="skills__span"> <span className='skills__span--bold'>⤑</span> FIREBASE</span>
         </section>
       </section>
     </section>
