@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import Project from '../components/Project'
 import { GlobalContext } from '../context/GlobalContext';
+import { motion } from 'framer-motion'
 
 const ProjectContainer = () => {
 
@@ -9,8 +10,12 @@ const ProjectContainer = () => {
 
   return (
 
-
-    <section className='projects__section'>
+    <motion.section 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      className='projects__section'>
       <section className="projects">
         <h4 className="projects__title">PROYECTOS</h4>
       </section>
@@ -21,7 +26,7 @@ const ProjectContainer = () => {
         ))
       }
       </section>
-    </section>
+    </motion.section>
 
 
   )

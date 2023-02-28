@@ -9,11 +9,22 @@ const GlobalContextProvider = ({ children }) => {
 
     const scrollingProjects = {
         hidden: {
-            opacity: 0,
             x: -100,
         },
         visible: {
-          opacity: 1,
+          x: 0,
+          transition:{
+            type: 'spring',
+            duration: 0.1
+          }
+        }
+      }
+
+      const scrollingSkills = {
+        hidden: {
+            x: -100,
+        },
+        visible: {
           x: 0,
           transition:{
             type: 'spring',
@@ -27,7 +38,8 @@ const GlobalContextProvider = ({ children }) => {
             projects,
             softwares,
             rrss,
-            scrollingProjects
+            scrollingProjects,
+            scrollingSkills,
         }}
         >
         {children}

@@ -1,6 +1,7 @@
 import React from 'react'
 import Marquee from '../components/Marquee'
 import Header from '../components/Header'
+import { motion } from 'framer-motion'
 
 const Layout = (props) => {
 
@@ -9,10 +10,15 @@ const Layout = (props) => {
   return (
     <>
       <Marquee/>
-      <main className='wrapper'>
+      <motion.main 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      className='wrapper'>
           <Header/>
           {children}
-      </main>
+      </motion.main>
     </>
   )
 }

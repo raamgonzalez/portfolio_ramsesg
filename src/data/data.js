@@ -44,7 +44,7 @@ export const data = {
       description:
         "Tienda de venta de productos tecnologicos, aproveche para incorporar mock async",
       soft: ["html", "css", "javascript", "reactjs", "firebase", "axios", "sass"],
-      media: "./media/projects/project_tecnophil.png",
+      media: "./media/projects/project_tecnophil.jpg",
       urlgit: "https://github.com/raamgonzalez/Ecommerce-Tecnophil_Gonzalez",
       urldeploy: "https://ecommerce-react-34850.vercel.app/",
     },
@@ -75,7 +75,7 @@ export const data = {
       description:
         "Pagina web realizada para curso de programación fullstack python.",
       soft: ["html", "css"],
-      media: "./media/projects/project_regulux.png",
+      media: "./media/projects/project_regulux.jpg",
       urlgit:
         "https://github.com/FerBarreyro/TPO-Desarrollo-WEB-Equipo-14-Comisi-n-22523.github.io",
       urldeploy: "https://reguluxlamp.netlify.app/",
@@ -86,7 +86,7 @@ export const data = {
       description:
         "Web para tienda de camisetas de futbol realizada en javascript vanilla",
       soft: ["html", "css", "javascript"],
-      media: "./media/projects/project_camisetasdprimera.png",
+      media: "./media/projects/project_camisetasdprimera.jpg",
       urlgit: "https://github.com/raamgonzalez/Ecommerce-Camisetas_Javascript",
       urldeploy: "https://ecommerce-camisetasde1.netlify.app/",
     },

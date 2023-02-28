@@ -7,13 +7,18 @@ import { GlobalContext } from "../context/GlobalContext";
 
 const Skills = () => {
 
-  const { scrollingProjects } = useContext(GlobalContext)
+  const { scrollingSkills } = useContext(GlobalContext)
 
   return (
-    <section className="skills">
+    <motion.section 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      className="skills">
       <h4 className="skills__title">HABILIDADES</h4>
       <motion.section 
-        variants={scrollingProjects}
+        variants={scrollingSkills}
         initial="hidden"
         whileInView={"visible"}
         className="skills__container">
@@ -21,7 +26,7 @@ const Skills = () => {
         <SkillsSoft />
         <SkillsStudy />
       </motion.section>
-    </section>
+    </motion.section>
   );
 };
 

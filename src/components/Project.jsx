@@ -10,7 +10,12 @@ const Project = (props) => {
 
   return (
     <>
-      <section className="project__container">
+      <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+          className="project__container">
         <motion.section
           variants={scrollingProjects}
           initial="hidden"
@@ -33,7 +38,7 @@ const Project = (props) => {
             className="card__a" href={urldeploy} target="_noblank" >DEPLOY</motion.a>
           </section>
         </motion.section>
-      </section>
+      </motion.section>
     </>
   );
 };

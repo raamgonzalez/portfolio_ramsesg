@@ -1,8 +1,14 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const SkillsSoftwares = () => {
   return (
-    <section className="skills__section softwares">
+    <motion.section 
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 1 }}
+    className="skills__section softwares">
       <h5 className="skills__h5">SOFTWARES</h5>
       <section className="skills__description skills__description--gap">
         <section className="skills__text">
@@ -22,7 +28,7 @@ const SkillsSoftwares = () => {
           <span className="skills__span"> <span className='skills__span--bold'>⤑</span> FIREBASE</span>
         </section>
       </section>
-    </section>
+    </motion.section>
   );
 }
 

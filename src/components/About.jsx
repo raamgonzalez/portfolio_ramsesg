@@ -1,8 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className="about">
+    <motion.section 
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 1 }}
+    className="about">
       <section className="about__title title">
         <h2 className="title__h2">A FRONT END ARCHITECT</h2>
         <img
@@ -27,7 +33,7 @@ const About = () => {
           PARA MEJORAR MIS HABILIDADES.
         </p>
       </section>
-    </section>
+    </motion.section>
   );
 };
 
