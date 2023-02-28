@@ -21,6 +21,10 @@
     animation: marquee 10s linear infinite;
 
   }
+
+  .marquee div:hover{
+    animation-play-state: paused;
+  }
   
   .marquee span {
 

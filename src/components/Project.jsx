@@ -1,13 +1,21 @@
+import { motion } from "framer-motion"
 import { useContext } from "react";
+import { GlobalContext } from "../context/GlobalContext";
 
 const Project = (props) => {
 
   const { id, name, description, media, urlgit, urldeploy } = props.project
 
+  const { scrollingProjects } = useContext(GlobalContext)
+
   return (
     <>
       <section className="project__container">
-        <section className="project__card card">
+        <motion.section
+          variants={scrollingProjects}
+          initial="hidden"
+          whileInView={"visible"}
+          className="project__card card">
           <section className="card__header header">
             <img className="header__img" src={media} alt={name} />
             <p className="header__p">
@@ -15,10 +23,16 @@ const Project = (props) => {
             </p>
           </section>
           <section className="card__buttons">
-            <button className="card__button"><a href={urlgit}  target="_noblank" rel="noopenner">GITHUB</a></button>
-            <button className="card__button"><a href={urldeploy} target="_noblank" >DEPLOY</a></button>
+            <motion.a 
+            whileTap={{scale: 0.90}}
+            whileHover={{scale: 1.05, border: "1px solid #F2F2F2", transition: "all 1s ease-in-out"}}
+            className="card__a" href={urlgit}  target="_noblank" rel="noopenner">GITHUB</motion.a>
+            <motion.a 
+            whileTap={{scale: 0.90}}
+            whileHover={{scale: 1.05, border: "1px solid #F2F2F2", transition: "all 1s ease-in-out"}}
+            className="card__a" href={urldeploy} target="_noblank" >DEPLOY</motion.a>
           </section>
-        </section>
+        </motion.section>
       </section>
     </>
   );
@@ -26,3 +40,4 @@ const Project = (props) => {
 
 
 export default Project;
+

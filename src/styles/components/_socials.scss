@@ -32,11 +32,11 @@
             @include flex(row, wrap, space-between , center, 1em);
         }
 
-        
-
+    
     }
 
     &__li{
+
 
         @include dp(){
             padding: 0.2em 0.4em;
@@ -55,5 +55,6 @@
             display: block;
             color: #87A440;
         }
+
     }
 }

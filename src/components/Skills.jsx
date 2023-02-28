@@ -1,17 +1,26 @@
-import React from "react";
+import { useContext } from "react";
+import { motion } from 'framer-motion'
 import SkillsSoft from "./SkillsSoft";
 import SkillsSoftwares from "./SkillsSoftwares";
 import SkillsStudy from "./SkillsStudy";
+import { GlobalContext } from "../context/GlobalContext";
 
 const Skills = () => {
+
+  const { scrollingProjects } = useContext(GlobalContext)
+
   return (
     <section className="skills">
       <h4 className="skills__title">HABILIDADES</h4>
-      <section className="skills__container">
+      <motion.section 
+        variants={scrollingProjects}
+        initial="hidden"
+        whileInView={"visible"}
+        className="skills__container">
         <SkillsSoftwares />
         <SkillsSoft />
         <SkillsStudy />
-      </section>
+      </motion.section>
     </section>
   );
 };

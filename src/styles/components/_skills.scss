@@ -48,17 +48,17 @@
 
         @include flex(column, nowrap, none, none, 0.3em);
 
-        @include mb(){
-            @include flex(column, nowrap, none, none, 0.5rem);
-        }
-
-        @include dp(){
+        @include gl(){
             @include flex(column, nowrap, none, none, 0.5rem);
         }
     }   
 
     .skills__text--row{
-        @include flex(row, nowrap, flex-start, none, 2em);
+
+        @include mb(){
+            @include flex(row, nowrap, flex-start, none, 2em);
+        }
+
     }
 
     .softwares{

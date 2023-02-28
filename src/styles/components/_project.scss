@@ -14,16 +14,42 @@
             margin: 2rem 0 0 0;
         }
 
+        
+
         .card{
             padding: 1.31rem 0 1.31rem 0.8rem;
-            background-color: #fff;
+            background-color: $primary;
             width: 24.5rem;
             height: 27.5rem;
 
-            @include flex(column, nowrap, space-between, none, 0);
-
-            border-left: 0.5rem solid #B51414;
+            border-left: 0.5rem solid $tertiary;
             border-style: inset;
+            
+            transition: all 0.3s ease;
+            position: relative;
+            outline: none;
+            z-index: 0;
+            background: #fff;
+
+
+  
+              &:hover:after {
+                width: 100%;
+              }
+              &:after {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                transition: all 0.3s ease;
+                left: 0;
+                top: 0;
+                width: 0;
+                height: 100%;
+                background: #610a0a;
+              }
+
+
+            @include flex(column, nowrap, space-between, none, 0);
 
             @include mb(){
                 margin: 1em 0 0 0;
@@ -85,6 +111,14 @@
             &__buttons{
 
                 @include flex(row, nowrap, flex-start, none, 2em);
+                
+                .card__a{
+                    padding: 0.1em 0.2em;
+                    border: 1px solid $text;
+                }
             }
         } 
+
+        
+
     }
