@@ -31,11 +31,11 @@ const Project = (props) => {
             <motion.a 
             whileTap={{scale: 0.90}}
             whileHover={{scale: 1.05, border: "1px solid #F2F2F2", transition: "all 1s ease-in-out"}}
-            className="card__a" href={urlgit}  target="_noblank" rel="noopenner">GITHUB</motion.a>
+            className="card__a" href={urlgit}  target="_noblank" rel="noopenner noreferrer" activeClassName="active">GITHUB</motion.a>
             <motion.a 
             whileTap={{scale: 0.90}}
             whileHover={{scale: 1.05, border: "1px solid #F2F2F2", transition: "all 1s ease-in-out"}}
-            className="card__a" href={urldeploy} target="_noblank" >DEPLOY</motion.a>
+            className="card__a" href={urldeploy} target="_noblank" rel="noopenner noreferrer" activeClassName="active">DEPLOY</motion.a>
           </section>
         </motion.section>
       </motion.section>

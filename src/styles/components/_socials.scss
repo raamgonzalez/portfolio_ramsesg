@@ -6,21 +6,18 @@
     // place-items: flex-end;.
     @include flex(row, wrap, space-between, flex-end, 0);
 
-    @include dp(){
-        margin: 0;
-        place-items: center;
-    }
-
-    @include mb(){
+    @include gl(){
         margin: 0;
         place-items: center;
     }
     
-    .social__contact{
-        padding: 0.5em 0.7em;
-        font-size: $font-size-5;
-        border: 1px solid $text;
-    }
+    // .social__contact{
+    //     width: 100%;
+    //     margin: 0 0 2em 0;
+    //     padding: 0.6em 0.8em;
+    //     font-size: $font-size-5;
+    //     border: 1px solid $text;
+    // }
 
     &__ul{
         height: 100%;
@@ -41,6 +38,22 @@
     
     }
 
+    .social__li--noresponsive{
+
+        padding: 0.5em 0.7em;
+        border: 1px solid $text;
+
+        @include dp(){
+            padding: 0.2em 0.4em;
+            margin: 0 0 2em 0;
+        }
+
+        @include mb(){
+            padding: 0.6em 0.8em;
+            margin: 0 0 2em 0;
+        }
+    }
+
     &__li{
 
 
@@ -57,10 +70,9 @@
         }
 
         &:hover{
-            content: '';
-            display: block;
             color: #87A440;
         }
 
     }
+
 }

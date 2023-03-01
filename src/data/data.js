@@ -55,8 +55,8 @@ export const data = {
         "Web realizada con el fin de mostrar mis trabajos y desarrollo como programador",
       soft: ["html", "css", "javascript", "reactjs", "sass"],
       media: "./media/projects/project_portfolio.jpg",
-      urlgit: "https://github.com/raamgonzalez/portfolio.basicweb",
-      urldeploy: "https://portfolio-basicweb.vercel.app/",
+      urlgit: "https://github.com/raamgonzalez/portfolio_pp",
+      urldeploy: "https://portfolio-k6lvtsq3w-raamgonzalez.vercel.app/",
     },
     {
       id: uuidv4(),

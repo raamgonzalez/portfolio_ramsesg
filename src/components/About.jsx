@@ -18,7 +18,7 @@ const About = () => {
     whileInView={"visible"}
     className="about">
       <section className="about__title title">
-        <h2 className="title__h2">A FRONT END ARCHITECT</h2>
+        <h1 className="title__h1">A FRONT END ARCHITECT</h1>
         <img
           className="title__img"
           src="./media/about/portfolio_profile.jpg"
@@ -28,8 +28,8 @@ const About = () => {
       <section className="about__description description">
         <p className="description__p">
           HOLA! ☻, MI NOMBRE ES RAMSÉS PERO ALGUNOS ME DICEN RAAM. SOY UN
-          ARQUITECTO CON UNA PASIÓN POR LA PROGRAMACIÓN Y ESTOY EMOCIONADO DE
-          COMENZAR MI CARRERA EN ESTE EMOCIONANTE CAMPO. A TRAVÉS DE MI
+          ARQUITECTO APASIONADO DE LA PROGRAMACIÓN. ESTOY EMOCIONADO DE
+          COMENZAR MI CARRERA EN ESTE CAMPO. A TRAVÉS DE MI
           EXPERIENCIA EN LA ARQUITECTURA, HE ADQUIRIDO HABILIDADES EN EL DISEÑO,
           PLANIFICACIÓN Y RESOLUCIÓN DE PROBLEMAS COMPLEJOS
         </p>

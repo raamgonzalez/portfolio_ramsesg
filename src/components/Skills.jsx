@@ -22,6 +22,7 @@ const Skills = () => {
         initial="hidden"
         whileInView={"visible"}
         className="skills__container">
+          
         <SkillsSoftwares />
         <SkillsSoft />
         <SkillsStudy />
