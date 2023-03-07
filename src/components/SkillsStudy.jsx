@@ -9,7 +9,7 @@ const SkillsStudy = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
       className="skills__section study">
-      <h5 className="skills__h5">STUDY</h5>
+      <h5 className="skills__h5">ESTUDIANDO</h5>
       <section className="skills__text skills__text--row">
           <span className="skills__span"> <span className='skills__span--bold'>&</span> REACT</span>
           <span className="skills__span"> <span className='skills__span--bold'>&</span> ASTRO</span>

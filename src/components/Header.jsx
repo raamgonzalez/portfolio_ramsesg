@@ -12,9 +12,9 @@ const Header = () => {
     transition={{ duration: 0.3 }}
     className='header'>
       <ul className='header__navbar navbar'>
-          <li className='navbar__li'><NavLink to='/' activeClassName='active'>ABOUT ME</NavLink></li>
+          <li className='navbar__li'><NavLink to='/' activeClassName='active'>ACERCA</NavLink></li>
           <li className='navbar__li'><NavLink to='/skills' activeClassName='active'>SKILLS</NavLink></li>
-          <li className='navbar__li'><NavLink to='/projects' activeClassName='active'>PROJECTS</NavLink></li>
+          <li className='navbar__li'><NavLink to='/projects' activeClassName='active'>PROYECTOS</NavLink></li>
       </ul>
       <section className='navbar__brand brand'>
         <motion.img

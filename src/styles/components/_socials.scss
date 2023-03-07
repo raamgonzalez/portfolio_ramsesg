@@ -1,5 +1,5 @@
 .social{
-    margin: 2em 0 0 0;
+    margin: 1em 0 0 0;
 
     height: 100%;
     // display: grid;
@@ -41,7 +41,7 @@
     .social__li--noresponsive{
 
         padding: 0.5em 0.7em;
-        border: 1px solid $text;
+        // border: 1px solid $text;
 
         @include dp(){
             padding: 0.2em 0.4em;

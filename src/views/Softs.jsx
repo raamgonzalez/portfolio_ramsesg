@@ -5,7 +5,7 @@ const Softs = () => {
   return (
     <>
       <Skills/>
-      <img src='./media/skills/figure_01.svg' className='skills__img'/>
+      {/* <img src='./media/skills/figure_01.svg' className='skills__img'/> */}
     </>
   )
 }

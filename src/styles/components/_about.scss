@@ -1,5 +1,5 @@
 .about{
-    margin: 4em 0 0 0;
+    margin: 3em 0 0 0;
 
     @include flex(row, nowrap, none, none, 0);
 
@@ -61,9 +61,10 @@
         &__p{
             text-align: left;
             font-size: $font-size-4;
+            letter-spacing: 0rem;
             font-weight: 300;
-            line-height: 1.6rem;
-
+            line-height: 2rem;
+            font-family: $font-base;
         }
 
         &__p--margin{

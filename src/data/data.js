@@ -6,8 +6,8 @@ export const data = {
   rrss: [
 		{
 			id: uuidv4(),
-			name: "instagram",
-			href: "https://www.instagram.com/raam.gonzalez/",
+			name: "whatsapp",
+			href: "https://wa.me/1155789343",
       state: true
 		},
 		{
@@ -34,6 +34,12 @@ export const data = {
 			name: "linkedin",
 			href: "https://www.linkedin.com/in/ramsesoctaviogonzalez/",
       state: true
+		},
+    {
+			id: uuidv4(),
+			name: "instagram",
+			href: "https://www.instagram.com/raam.gonzalez/",
+      state: false
 		},
   ],
 
@@ -105,7 +111,7 @@ export const data = {
       id: uuidv4(),
       name: "appclima",
       description:
-        "Aplicacion del clima realizado en Vue con Vite. Tiene sincronización con API de clima y te dice de acuerdo a la ubicacion que le pongas",
+        "Aplicacion del clima realizado en Vue con Vite. Tiene sincronización con API de clima.",
       soft: ["html", "css", "javascript", "vue", "vite"],
       media: "./media/projects/project_appclima.jpg",
       urlgit: "https://github.com/raamgonzalez/weather__app-vue",

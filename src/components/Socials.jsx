@@ -22,7 +22,7 @@ const Socials = () => {
         whileTap={{scale: 0.90}}
         whileHover={{scale: 1.05, border: "1px solid #F2F2F2", transition: "all 1s ease-in-out"}}
         >
-        CONTACT ME!
+        CONTÁCTAME!
       </motion.a>
       </li>
       <ul className="social__ul">
