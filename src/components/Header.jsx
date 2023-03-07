@@ -17,14 +17,7 @@ const Header = () => {
           <li className='navbar__li'><NavLink to='/projects' activeClassName='active'>PROYECTOS</NavLink></li>
       </ul>
       <section className='navbar__brand brand'>
-        <motion.img
-        drag="x"
-        dragConstraints={{ left: -600, right: 0 }}
-        dragSnapToOrigin = {true}
-        dragElastic={0.1}
-        initial={{x: -800}}
-        animate={{ x: 0 }}
-        transition={{ }}
+        <img
         className='brand__logo' src='./media/about/portfolio_brand.svg' alt='Logo de Ramses'/>
       </section>
     </motion.header>
